@@ -4,5 +4,8 @@ class Foto:
     self.__altura = altura
     self.__largura = largura
     
+  @property
+  def url(self):
+    return self.__url
   def __repr__(self) -> str:
     return f'foto: {self.__url}, altura: {self.__altura}, largura: {self.__largura}\n'
